@@ -15,6 +15,6 @@ export const run = (inputs: Inputs): Outputs => {
 
   return {
     cacheFrom: c.from.map((from) => `type=registry,ref=${from}`).join('\n'),
-    cacheTo: c.to.map((to) => `type=registry,ref=${to},mode=min`).join('\n'),
+    cacheTo: c.to.map((to) => `type=registry,ref=${to},mode=max`).join('\n'),
   }
 }
