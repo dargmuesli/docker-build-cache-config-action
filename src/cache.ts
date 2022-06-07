@@ -83,7 +83,6 @@ const inferBranch = (context: PartialContext): Cache => {
     }
   }
 
-
   if (context.eventName === 'release') {
     if (context.ref.startsWith('refs/tags/')) {
       // tag push
